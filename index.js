@@ -29,17 +29,14 @@ const submit1 = document.querySelector('#submit_button');
 
 submit1.addEventListener('click', () => {
   show.submit();
-  // alert('Books Added');      // eslint-disable-line
 });
 const removeElements = document.querySelectorAll('.remove');
 removeElements.forEach((el) => {
   el.addEventListener('click', (e) => {
-    // rem.submit();
     const store = e.currentTarget.dataset;
     const str = store.id;
-    // console.log(str);
 
     show.remove(str);
-            location.reload(); // eslint-disable-line
+    window.location.reload();
   });
 });

@@ -5,7 +5,7 @@ const menuListF = () => {
   sectionList.style.display = 'flex';
   newBook.style.display = 'none';
   contact.style.display = 'none';
-    location.reload();         // eslint-disable-line
+  window.location.reload();
 };
 
 export default menuListF;

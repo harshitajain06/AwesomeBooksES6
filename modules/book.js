@@ -25,12 +25,12 @@ class TitleAuthor {
       localStorage.setItem('students', JSON.stringify(storedTitleAuthor));
     }
 
-        location.reload(); // eslint-disable-line
+    window.location.reload();
   }
 
   showBook() {                 // eslint-disable-line   
     const storedTitleAuthor = JSON.parse(localStorage.getItem('students'));
-    // console.log(storedTitleAuthor);
+
     const book = document.getElementById('display_card');
     if (!storedTitleAuthor || storedTitleAuthor.length === 0) {
       book.innerHTML = `
